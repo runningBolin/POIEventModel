@@ -1,5 +1,5 @@
 # POIEventModel
-使用POI的EventModel解析07版及以上的excel文件。
+使用POI的EventModel解析07版及以上的excel文件。poi的event model对内存和cpu资源的占用都极小，解析效率也比user model强很多，5w+数据解析时间少于一分半。
 
 提供两种读取sheet页内数据的方式：1，一次性解析出指定sheet页内数据行，提供数据出口；2，逐行获取sheet页内数据行，基于BlockingQueue阻塞队列实现，提供逐行获取数据的出口；
 
