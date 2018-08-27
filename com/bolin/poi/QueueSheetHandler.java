@@ -25,7 +25,9 @@ public class QueueSheetHandler extends DefaultSheetHandler {
 	
 	
 	public boolean finished(){
-		return finished;
+		//if document read end and the queue is not empty and end get data
+		//so that the readed rows not equals the document rows
+		return start && finished && queue.isEmpty();
 	}
 	
 	public HashMap<Integer, String> readRowData() throws InterruptedException {
